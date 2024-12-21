@@ -42,7 +42,7 @@ void Module_Deinit(void)
 
 void Module_Start(module_t* module, remote_t* remote)
 {
-	switch(Remote->remote_info->key_info->MODE)		//Mode choice
+	switch(remote->remote_info->key_info->MODE)		//Mode choice
 	{
 		case RED_MODE:
 		{

@@ -29,6 +29,7 @@ void Arm_Deinit(arm_t* arm)
 
 /**@brief Set control under red mode.
 	*@param Arm structure ptr
+	*@param Remote structure ptr
   *@retval None
   */
 void Arm_RedMode_Ctrl_Set(arm_t* arm, remote_t* remote)
@@ -43,6 +44,7 @@ void Arm_RedMode_Ctrl_Set(arm_t* arm, remote_t* remote)
 /**@brief Solve and set servo value.
 	*@note	Solve servo that is on the right side.
 	*@param Servo structure ptr
+	*@param Remote structure ptr
   *@retval None
   */
 void Arm_RightServo_Set(servo_t* servo, remote_t* remote)		//解算并获取CCR，传入角度设置函数中
@@ -81,6 +83,7 @@ void Arm_RightServo_Set(servo_t* servo, remote_t* remote)		//解算并获取CCR，传入
 /**@brief Solve and set servo value.
 	*@note	Solve servo that is on the left side.
 	*@param Servo structure ptr
+	*@param Remote structure ptr
   *@retval None
   */
 void Arm_LeftServo_Set(servo_t* servo, remote_t* remote)
@@ -119,6 +122,7 @@ void Arm_LeftServo_Set(servo_t* servo, remote_t* remote)
 /**@brief Solve and set servo value.
 	*@note	Solve servo that is on the front side.
 	*@param Servo structure ptr
+	*@param Remote structure ptr
   *@retval None
   */
 void Arm_FrontServo_Set(servo_t* servo, remote_t* remote)
@@ -156,6 +160,7 @@ void Arm_FrontServo_Set(servo_t* servo, remote_t* remote)
 
 /**@brief Start control under red mode.
 	*@param Arm structure ptr
+	*@param Remote structure ptr
   *@retval None
   */
 void Arm_RedMode_Ctrl_Start(arm_t* arm, remote_t* remote)
@@ -165,5 +170,5 @@ void Arm_RedMode_Ctrl_Start(arm_t* arm, remote_t* remote)
 	//先解算，再启动
 	Servo_LEFT_Start(LEFT);
 	Servo_RIGHT_Start(RIGHT);
-//	Servo_FRONT_Start(FRONT);
+//	Servo_FRONT_Start(FRONT);		//测试，要换一个新的舵机
 }

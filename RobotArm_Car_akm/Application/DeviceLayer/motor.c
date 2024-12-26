@@ -26,10 +26,10 @@ void Motor_Rev_Forward_Set(motor_t* motor, uint16_t rev_ccr)
 		motor[i].rev_state = REV_FORWARD;
 	}
 	
-	__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, motor[RB].rev_CCR);		//
-	__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, motor[LB].rev_CCR);		//
-	__HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, motor[RF].rev_CCR);		//
-	__HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_3, motor[LF].rev_CCR);		//
+	__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, motor[RB].rev_CCR);		
+	__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, motor[LB].rev_CCR);		
+	__HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, motor[RF].rev_CCR);		
+	__HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_3, motor[LF].rev_CCR);		
 }
 
 /**@brief Set backward rev value of each motor.
@@ -45,10 +45,10 @@ void Motor_Rev_Backward_Set(motor_t* motor, uint16_t rev_ccr)
 		motor[i].rev_state = REV_BACKWARD;
 	}
 	
-	__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_4, motor[RB].rev_CCR);		//
-	__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, motor[LB].rev_CCR);		//
-	__HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_2, motor[RF].rev_CCR);		//
-	__HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_4, motor[LF].rev_CCR);		//
+	__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_4, motor[RB].rev_CCR);		
+	__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, motor[LB].rev_CCR);		
+	__HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_2, motor[RF].rev_CCR);		
+	__HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_4, motor[LF].rev_CCR);		
 }
 
 /**@brief Set rev to zero of each motor.
@@ -63,10 +63,10 @@ void Motor_Rev_Zero_Set(motor_t* motor)
 		motor[i].rev_state = REV_ZERO;
 	}
 	
-	__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, motor[RB].rev_CCR);		//
-	__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, motor[LB].rev_CCR);		//
-	__HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, motor[RF].rev_CCR);		//
-	__HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_3, motor[LF].rev_CCR);		//
+	__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, motor[RB].rev_CCR);		
+	__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, motor[LB].rev_CCR);		
+	__HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, motor[RF].rev_CCR);		
+	__HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_3, motor[LF].rev_CCR);		
 }
 
 /**@brief Start forward rev value of each motor.

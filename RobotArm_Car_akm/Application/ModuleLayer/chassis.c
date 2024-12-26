@@ -87,6 +87,7 @@ void Chassis_StickCtrl_Mode_Set(chassis_t* chassis)
 
 /**@brief Set control under red mode.
 	*@param Chassis structure ptr
+	*@param Remote structure ptr
   *@retval None
   */
 void Chassis_RedMode_Ctrl_Set(chassis_t* chassis, remote_t* remote)
@@ -161,6 +162,7 @@ void Chassis_RedMode_Ctrl_Set(chassis_t* chassis, remote_t* remote)
 
 /**@brief Start control under red mode.
 	*@param Chassis structure ptr
+	*@param Remote structure ptr
   *@retval None
   */
 void Chassis_RedMode_Ctrl_Start(chassis_t* chassis, remote_t* remote)

@@ -4,13 +4,19 @@
 #include "Servo.h"
 #include "remote.h"
 
+/******************************Private define******************************************/
+
 #define			SCALE_FACTOR			1
+
+/******************************Private structure******************************************/
 
 typedef struct
 {
 	servo_t* arm_servo;
 	
 }arm_t;
+
+/******************************Private function******************************************/
 
 void Arm_Init(arm_t* arm);
 void Arm_Deinit(arm_t* arm);

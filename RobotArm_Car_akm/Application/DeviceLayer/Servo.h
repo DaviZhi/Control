@@ -4,6 +4,8 @@
 #include "stm32f1xx_hal.h"
 #include "tim.h"
 
+/******************************Private define******************************************/
+
 #define MAX_DEGR_CCR																250
 #define ARM_SERVO_UNIT															1
 #define CHASSIS_SERVO_UNIT													3
@@ -24,6 +26,8 @@
 #define RIGHT_SERVO_EXTEND_LIMIT_CCR				(uint16_t)230
 #define RIGHT_SERVO_DRAWBACK_LIMIT_CCR			(uint16_t)140
 
+/******************************Private enum******************************************/
+
 typedef enum
 {
 	FRONT = 0,
@@ -33,11 +37,15 @@ typedef enum
 	NUM_OF_SERVO = 4
 }servo_signal_e;
 
+/******************************Private structure******************************************/
+
 typedef struct
 {
 	uint16_t degr_CCR;
 	
 }servo_t;
+
+/******************************Private function******************************************/
 
 void Servo_Init(servo_t* servo, servo_signal_e servo_signal);
 void Servo_FRONT_Degr_Set(uint16_t degr_ccr);

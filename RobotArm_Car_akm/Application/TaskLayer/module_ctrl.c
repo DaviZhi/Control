@@ -1,9 +1,10 @@
 #include "module_ctrl.h"
 #include "stdlib.h"
 
-module_t* Module;
+module_t* Module;		//The whole module structure ptr
 
 /**@brief Initialize module, including arm and chassis.
+	*@note	This function will be called in main function.
 	*@param None
   *@retval None
   */
@@ -40,6 +41,12 @@ void Module_Deinit(void)
 	}
 }
 
+/**@brief Start the whole module.
+	*@note	This function will be called in main function.
+	*@param Whole module structure ptr
+	*@param Remote structure ptr
+  *@retval None
+  */
 void Module_Start(module_t* module, remote_t* remote)
 {
 	switch(remote->remote_info->key_info->MODE)		//Mode choice

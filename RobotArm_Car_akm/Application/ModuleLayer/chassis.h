@@ -5,6 +5,8 @@
 #include "Servo.h"
 #include "motor.h"
 
+/******************************Private structure******************************************/
+
 typedef struct
 {
 	uint16_t key_rev_CCR;
@@ -21,6 +23,8 @@ typedef struct
 	servo_t* chassis_servo;
 	
 }chassis_t;
+
+/******************************Private function******************************************/
 
 void Chassis_Init(chassis_t* chassis);
 void Chassis_Deinit(chassis_t* chassis);

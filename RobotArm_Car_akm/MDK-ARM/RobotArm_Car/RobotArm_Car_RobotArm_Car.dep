@@ -1,5 +1,5 @@
 Dependencies for Project 'RobotArm_Car', Target 'RobotArm_Car': (DO NOT MODIFY !)
-F (startup_stm32f103xb.s)(0x675AC7ED)(--cpu Cortex-M3 -g --apcs=interwork -I.\RTE\_RobotArm_Car-I"D:\Soft\Keil5 MDK\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Soft\Keil5 MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"--pd "__UVISION_VERSION SETA 524" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list startup_stm32f103xb.lst --xref -o robotarm_car\startup_stm32f103xb.o --depend robotarm_car\startup_stm32f103xb.d)
+F (startup_stm32f103xb.s)(0x676820F0)(--cpu Cortex-M3 -g --apcs=interwork -I.\RTE\_RobotArm_Car-I"D:\Soft\Keil5 MDK\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Soft\Keil5 MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"--pd "__UVISION_VERSION SETA 524" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list startup_stm32f103xb.lst --xref -o robotarm_car\startup_stm32f103xb.o --depend robotarm_car\startup_stm32f103xb.d)
 F (../Core/Src/main.c)(0x676698BE)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/DeviceLayer -I ../Application/TaskLayer -I ../Application/SystemLayer -I ../Application/ModuleLayer-I.\RTE\_RobotArm_Car-I"D:\Soft\Keil5 MDK\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Soft\Keil5 MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o robotarm_car\main.o --omf_browse robotarm_car\main.crf --depend robotarm_car\main.d)
 I (../Core/Inc/main.h)(0x675931A2)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x6750353A)
@@ -32,12 +32,12 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x6750353A)
 I (../Core/Inc/spi.h)(0x67592CBD)
 I (../Core/Inc/tim.h)(0x675AA6A6)
 I (../Core/Inc/gpio.h)(0x67592CBD)
-I (../Application/TaskLayer/module_ctrl.h)(0x67668CEC)
-I (../Application/DeviceLayer/remote.h)(0x67668CED)
-I (../Application/ModuleLayer/chassis.h)(0x67668C37)
-I (../Application/DeviceLayer/Servo.h)(0x67669E15)
-I (../Application/DeviceLayer/motor.h)(0x67668CEC)
-I (../Application/ModuleLayer/mechanical_arm.h)(0x67668C37)
+I (../Application/TaskLayer/module_ctrl.h)(0x676BD9C6)
+I (../Application/DeviceLayer/remote.h)(0x676BD9C6)
+I (../Application/ModuleLayer/chassis.h)(0x676BD9C6)
+I (../Application/DeviceLayer/Servo.h)(0x676BD9C6)
+I (../Application/DeviceLayer/motor.h)(0x676BD9C6)
+I (../Application/ModuleLayer/mechanical_arm.h)(0x676BD9C6)
 F (../Core/Src/gpio.c)(0x675931A1)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/DeviceLayer -I ../Application/TaskLayer -I ../Application/SystemLayer -I ../Application/ModuleLayer-I.\RTE\_RobotArm_Car-I"D:\Soft\Keil5 MDK\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Soft\Keil5 MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o robotarm_car\gpio.o --omf_browse robotarm_car\gpio.crf --depend robotarm_car\gpio.d)
 I (../Core/Inc/gpio.h)(0x67592CBD)
 I (../Core/Inc/main.h)(0x675931A2)
@@ -98,7 +98,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x6750353A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x6750353A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x6750353A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x6750353A)
-F (../Core/Src/tim.c)(0x675AC7EC)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/DeviceLayer -I ../Application/TaskLayer -I ../Application/SystemLayer -I ../Application/ModuleLayer-I.\RTE\_RobotArm_Car-I"D:\Soft\Keil5 MDK\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Soft\Keil5 MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o robotarm_car\tim.o --omf_browse robotarm_car\tim.crf --depend robotarm_car\tim.d)
+F (../Core/Src/tim.c)(0x676820EF)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/DeviceLayer -I ../Application/TaskLayer -I ../Application/SystemLayer -I ../Application/ModuleLayer-I.\RTE\_RobotArm_Car-I"D:\Soft\Keil5 MDK\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Soft\Keil5 MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o robotarm_car\tim.o --omf_browse robotarm_car\tim.crf --depend robotarm_car\tim.d)
 I (../Core/Inc/tim.h)(0x675AA6A6)
 I (../Core/Inc/main.h)(0x675931A2)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x6750353A)
@@ -607,8 +607,8 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x6750353A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x6750353A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x6750353A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x6750353A)
-F (..\Application\DeviceLayer\remote.c)(0x67668C37)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/DeviceLayer -I ../Application/TaskLayer -I ../Application/SystemLayer -I ../Application/ModuleLayer-I.\RTE\_RobotArm_Car-I"D:\Soft\Keil5 MDK\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Soft\Keil5 MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o robotarm_car\remote.o --omf_browse robotarm_car\remote.crf --depend robotarm_car\remote.d)
-I (..\Application\DeviceLayer\remote.h)(0x67668CED)
+F (..\Application\DeviceLayer\remote.c)(0x676BD9C6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/DeviceLayer -I ../Application/TaskLayer -I ../Application/SystemLayer -I ../Application/ModuleLayer-I.\RTE\_RobotArm_Car-I"D:\Soft\Keil5 MDK\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Soft\Keil5 MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o robotarm_car\remote.o --omf_browse robotarm_car\remote.crf --depend robotarm_car\remote.d)
+I (..\Application\DeviceLayer\remote.h)(0x676BD9C6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x6750353A)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x675AB61A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x6750353A)
@@ -640,9 +640,9 @@ I (../Core/Inc/spi.h)(0x67592CBD)
 I (../Core/Inc/main.h)(0x675931A2)
 I (../Core/Inc/tim.h)(0x675AA6A6)
 I (D:\Soft\Keil5 MDK\ARM\ARMCC\include\stdlib.h)(0x588B8344)
-F (..\Application\DeviceLayer\remote.h)(0x67668CED)()
-F (..\Application\DeviceLayer\motor.c)(0x67668889)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/DeviceLayer -I ../Application/TaskLayer -I ../Application/SystemLayer -I ../Application/ModuleLayer-I.\RTE\_RobotArm_Car-I"D:\Soft\Keil5 MDK\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Soft\Keil5 MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o robotarm_car\motor.o --omf_browse robotarm_car\motor.crf --depend robotarm_car\motor.d)
-I (..\Application\DeviceLayer\motor.h)(0x67668CEC)
+F (..\Application\DeviceLayer\remote.h)(0x676BD9C6)()
+F (..\Application\DeviceLayer\motor.c)(0x676CFE5F)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/DeviceLayer -I ../Application/TaskLayer -I ../Application/SystemLayer -I ../Application/ModuleLayer-I.\RTE\_RobotArm_Car-I"D:\Soft\Keil5 MDK\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Soft\Keil5 MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o robotarm_car\motor.o --omf_browse robotarm_car\motor.crf --depend robotarm_car\motor.d)
+I (..\Application\DeviceLayer\motor.h)(0x676BD9C6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x6750353A)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x675AB61A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x6750353A)
@@ -672,9 +672,9 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x6750353A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x6750353A)
 I (../Core/Inc/tim.h)(0x675AA6A6)
 I (../Core/Inc/main.h)(0x675931A2)
-F (..\Application\DeviceLayer\motor.h)(0x67668CEC)()
-F (..\Application\DeviceLayer\Servo.c)(0x6765A186)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/DeviceLayer -I ../Application/TaskLayer -I ../Application/SystemLayer -I ../Application/ModuleLayer-I.\RTE\_RobotArm_Car-I"D:\Soft\Keil5 MDK\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Soft\Keil5 MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o robotarm_car\servo.o --omf_browse robotarm_car\servo.crf --depend robotarm_car\servo.d)
-I (..\Application\DeviceLayer\Servo.h)(0x67669E15)
+F (..\Application\DeviceLayer\motor.h)(0x676BD9C6)()
+F (..\Application\DeviceLayer\Servo.c)(0x676BD9C6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/DeviceLayer -I ../Application/TaskLayer -I ../Application/SystemLayer -I ../Application/ModuleLayer-I.\RTE\_RobotArm_Car-I"D:\Soft\Keil5 MDK\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Soft\Keil5 MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o robotarm_car\servo.o --omf_browse robotarm_car\servo.crf --depend robotarm_car\servo.d)
+I (..\Application\DeviceLayer\Servo.h)(0x676BD9C6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x6750353A)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x675AB61A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x6750353A)
@@ -704,10 +704,10 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x6750353A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x6750353A)
 I (../Core/Inc/tim.h)(0x675AA6A6)
 I (../Core/Inc/main.h)(0x675931A2)
-F (..\Application\DeviceLayer\Servo.h)(0x67669E15)()
-F (..\Application\ModuleLayer\mechanical_arm.c)(0x67668C37)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/DeviceLayer -I ../Application/TaskLayer -I ../Application/SystemLayer -I ../Application/ModuleLayer-I.\RTE\_RobotArm_Car-I"D:\Soft\Keil5 MDK\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Soft\Keil5 MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o robotarm_car\mechanical_arm.o --omf_browse robotarm_car\mechanical_arm.crf --depend robotarm_car\mechanical_arm.d)
-I (..\Application\ModuleLayer\mechanical_arm.h)(0x67668C37)
-I (../Application/DeviceLayer/Servo.h)(0x67669E15)
+F (..\Application\DeviceLayer\Servo.h)(0x676BD9C6)()
+F (..\Application\ModuleLayer\mechanical_arm.c)(0x676BD9C6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/DeviceLayer -I ../Application/TaskLayer -I ../Application/SystemLayer -I ../Application/ModuleLayer-I.\RTE\_RobotArm_Car-I"D:\Soft\Keil5 MDK\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Soft\Keil5 MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o robotarm_car\mechanical_arm.o --omf_browse robotarm_car\mechanical_arm.crf --depend robotarm_car\mechanical_arm.d)
+I (..\Application\ModuleLayer\mechanical_arm.h)(0x676BD9C6)
+I (../Application/DeviceLayer/Servo.h)(0x676BD9C6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x6750353A)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x675AB61A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x6750353A)
@@ -737,50 +737,13 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x6750353A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x6750353A)
 I (../Core/Inc/tim.h)(0x675AA6A6)
 I (../Core/Inc/main.h)(0x675931A2)
-I (../Application/DeviceLayer/remote.h)(0x67668CED)
+I (../Application/DeviceLayer/remote.h)(0x676BD9C6)
 I (../Core/Inc/spi.h)(0x67592CBD)
 I (D:\Soft\Keil5 MDK\ARM\ARMCC\include\stdlib.h)(0x588B8344)
-F (..\Application\ModuleLayer\mechanical_arm.h)(0x67668C37)()
-F (..\Application\ModuleLayer\chassis.c)(0x67668C37)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/DeviceLayer -I ../Application/TaskLayer -I ../Application/SystemLayer -I ../Application/ModuleLayer-I.\RTE\_RobotArm_Car-I"D:\Soft\Keil5 MDK\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Soft\Keil5 MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o robotarm_car\chassis.o --omf_browse robotarm_car\chassis.crf --depend robotarm_car\chassis.d)
-I (..\Application\ModuleLayer\chassis.h)(0x67668C37)
-I (../Application/DeviceLayer/remote.h)(0x67668CED)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x6750353A)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x675AB61A)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x6750353A)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x6750353A)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x6750353A)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x6750353A)
-I (../Drivers/CMSIS/Include/core_cm3.h)(0x67503532)
-I (D:\Soft\Keil5 MDK\ARM\ARMCC\include\stdint.h)(0x588B8344)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67503532)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67503532)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67503532)
-I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x6750353A)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6750353A)
-I (D:\Soft\Keil5 MDK\ARM\ARMCC\include\stddef.h)(0x588B8344)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x6750353A)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x6750353A)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x6750353A)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x6750353A)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x6750353A)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x6750353A)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x6750353A)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x6750353A)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x6750353A)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x6750353A)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x6750353A)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x6750353A)
-I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x6750353A)
-I (../Core/Inc/spi.h)(0x67592CBD)
-I (../Core/Inc/main.h)(0x675931A2)
-I (../Core/Inc/tim.h)(0x675AA6A6)
-I (../Application/DeviceLayer/Servo.h)(0x67669E15)
-I (../Application/DeviceLayer/motor.h)(0x67668CEC)
-I (D:\Soft\Keil5 MDK\ARM\ARMCC\include\stdlib.h)(0x588B8344)
-F (..\Application\ModuleLayer\chassis.h)(0x67668C37)()
-F (..\Application\TaskLayer\module_ctrl.c)(0x6766A525)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/DeviceLayer -I ../Application/TaskLayer -I ../Application/SystemLayer -I ../Application/ModuleLayer-I.\RTE\_RobotArm_Car-I"D:\Soft\Keil5 MDK\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Soft\Keil5 MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o robotarm_car\module_ctrl.o --omf_browse robotarm_car\module_ctrl.crf --depend robotarm_car\module_ctrl.d)
-I (..\Application\TaskLayer\module_ctrl.h)(0x67668CEC)
-I (../Application/DeviceLayer/remote.h)(0x67668CED)
+F (..\Application\ModuleLayer\mechanical_arm.h)(0x676BD9C6)()
+F (..\Application\ModuleLayer\chassis.c)(0x676BD9C6)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/DeviceLayer -I ../Application/TaskLayer -I ../Application/SystemLayer -I ../Application/ModuleLayer-I.\RTE\_RobotArm_Car-I"D:\Soft\Keil5 MDK\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Soft\Keil5 MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o robotarm_car\chassis.o --omf_browse robotarm_car\chassis.crf --depend robotarm_car\chassis.d)
+I (..\Application\ModuleLayer\chassis.h)(0x676BD9C6)
+I (../Application/DeviceLayer/remote.h)(0x676BD9C6)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x6750353A)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x675AB61A)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x6750353A)
@@ -811,9 +774,46 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x6750353A)
 I (../Core/Inc/spi.h)(0x67592CBD)
 I (../Core/Inc/main.h)(0x675931A2)
 I (../Core/Inc/tim.h)(0x675AA6A6)
-I (../Application/ModuleLayer/chassis.h)(0x67668C37)
-I (../Application/DeviceLayer/Servo.h)(0x67669E15)
-I (../Application/DeviceLayer/motor.h)(0x67668CEC)
-I (../Application/ModuleLayer/mechanical_arm.h)(0x67668C37)
+I (../Application/DeviceLayer/Servo.h)(0x676BD9C6)
+I (../Application/DeviceLayer/motor.h)(0x676BD9C6)
 I (D:\Soft\Keil5 MDK\ARM\ARMCC\include\stdlib.h)(0x588B8344)
-F (..\Application\TaskLayer\module_ctrl.h)(0x67668CEC)()
+F (..\Application\ModuleLayer\chassis.h)(0x676BD9C6)()
+F (..\Application\TaskLayer\module_ctrl.c)(0x676BD604)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/DeviceLayer -I ../Application/TaskLayer -I ../Application/SystemLayer -I ../Application/ModuleLayer-I.\RTE\_RobotArm_Car-I"D:\Soft\Keil5 MDK\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include"-I"D:\Soft\Keil5 MDK\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include"-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o robotarm_car\module_ctrl.o --omf_browse robotarm_car\module_ctrl.crf --depend robotarm_car\module_ctrl.d)
+I (..\Application\TaskLayer\module_ctrl.h)(0x676BD9C6)
+I (../Application/DeviceLayer/remote.h)(0x676BD9C6)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x6750353A)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x675AB61A)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x6750353A)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x6750353A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x6750353A)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x6750353A)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x67503532)
+I (D:\Soft\Keil5 MDK\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x67503532)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x67503532)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x67503532)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x6750353A)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6750353A)
+I (D:\Soft\Keil5 MDK\ARM\ARMCC\include\stddef.h)(0x588B8344)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x6750353A)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x6750353A)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x6750353A)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h)(0x6750353A)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x6750353A)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x6750353A)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x6750353A)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x6750353A)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x6750353A)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x6750353A)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x6750353A)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x6750353A)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x6750353A)
+I (../Core/Inc/spi.h)(0x67592CBD)
+I (../Core/Inc/main.h)(0x675931A2)
+I (../Core/Inc/tim.h)(0x675AA6A6)
+I (../Application/ModuleLayer/chassis.h)(0x676BD9C6)
+I (../Application/DeviceLayer/Servo.h)(0x676BD9C6)
+I (../Application/DeviceLayer/motor.h)(0x676BD9C6)
+I (../Application/ModuleLayer/mechanical_arm.h)(0x676BD9C6)
+I (D:\Soft\Keil5 MDK\ARM\ARMCC\include\stdlib.h)(0x588B8344)
+F (..\Application\TaskLayer\module_ctrl.h)(0x676BD9C6)()

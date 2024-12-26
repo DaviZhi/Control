@@ -4,10 +4,14 @@
 #include "stm32f1xx_hal.h"
 #include "tim.h"
 
-#define MAX_REV_CCR		1000
+/******************************Private define******************************************/
+
+#define MAX_REV_CCR		500
 #define REV_FORWARD		1
 #define REV_BACKWARD	2
 #define REV_ZERO			0
+
+/******************************Private enum******************************************/
 
 /*Position of each motor*/
 typedef enum
@@ -20,12 +24,16 @@ typedef enum
 	
 }motor_signal_e;
 
+/******************************Private structure******************************************/
+
 typedef struct
 {
 	uint16_t rev_CCR;		//revolution speed(actual value of CCR)
 	uint8_t rev_state;
 	
 }motor_t;
+
+/******************************Private function******************************************/
 
 void Motor_Init(motor_t* motor);
 void Motor_Rev_Forward_Set(motor_t* motor, uint16_t rev_ccr);

@@ -1,7 +1,8 @@
 #include "Servo.h"
 
 /**@brief Initialize all four servos to middle.
-	*@param None
+	*@param Servo structure ptr
+	*@param Servo signal enum
   *@retval None
   */
 void Servo_Init(servo_t* servo, servo_signal_e servo_signal)
@@ -33,6 +34,10 @@ void Servo_Init(servo_t* servo, servo_signal_e servo_signal)
 	}
 }
 
+/**@brief Set ccr of servo of each position.
+	*@param Degree ccr.
+  *@retval None
+  */
 void Servo_FRONT_Degr_Set(uint16_t degr_ccr)
 {
 	__HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, degr_ccr);
@@ -53,6 +58,11 @@ void Servo_RIGHT_Degr_Set(uint16_t degr_ccr)
 	__HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_3, degr_ccr);
 }
 
+
+/**@brief Start servo of each position.
+	*@param Servo signal enum.
+  *@retval None
+  */
 void Servo_BOTTOM_Start(servo_signal_e servo_signal)
 {
 	if(servo_signal == BOTTOM)

@@ -5,6 +5,8 @@
 #include "chassis.h"
 #include "mechanical_arm.h"
 
+/******************************Private structure******************************************/
+
 typedef struct
 {
 	chassis_t* chassis;
@@ -12,7 +14,9 @@ typedef struct
 	
 }module_t;
 
-extern module_t* Module;
+extern module_t* Module;		//The whole module structure ptr
+
+/******************************Private function******************************************/
 
 void Module_Init(void);
 void Module_Deinit(void);

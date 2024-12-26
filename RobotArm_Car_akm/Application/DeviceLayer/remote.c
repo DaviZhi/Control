@@ -1,13 +1,13 @@
 #include "remote.h" 
 #include "stdlib.h"
 
-remote_t* Remote;		//Ò£¿ØÆ÷Ö¸Õë
+remote_t* Remote;			//The remote structure
 
 uint8_t Rx_Data[COMMUNI_CYCLE_LENGTH] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 uint8_t remote_cmd[3] = {CMD_START, REQUEST_DATA, 0x00};
 
 /**@brief Initialize remote structure.
-	*@note	Assign address.
+	*@note	Assign memory.
 	*@param None
   *@retval None
   */
@@ -19,6 +19,7 @@ void Remote_Init(void)
 	static remote_t remote = {&remote_info};
 	Remote = &remote;
 
+	//Another way to assign memory:
 //	remote = (remote_t*)malloc(sizeof(remote_t));
 //	remote->remote_info = (remote_info_t*)malloc(sizeof(remote_info_t));
 //	remote->remote_info->joystick_info = (joystick_info_t*)malloc(sizeof(joystick_info_t));
@@ -26,8 +27,8 @@ void Remote_Init(void)
 }
 
 /**@brief Remote start communication.
-	*@note	This function will be called by upper layer.
-	*@param Remote control structure ptr
+	*@note	This function will be called in main function.
+	*@param Remote control structure ptr.
   *@retval None
   */
 void Remote_Communi_Start(remote_t* remote)		
@@ -104,7 +105,7 @@ void Remote_Info_Init(remote_info_t* remote_info)
 }
 
 /**@brief A microsecond level delay function.
-	*@param Delay time. 
+	*@param Time need to be delayed. 
   *@retval None
   */
 void Delay_us(uint16_t nus)

@@ -5,6 +5,16 @@
 #include "Servo.h"
 #include "motor.h"
 
+/******************************Private define******************************************/
+
+#define		LEFT_FLAG				1
+#define 	RIGHT_FLAG			0
+#define		STRAIGHT_FLAG		2
+
+/*Choose which type of chassis should be used*/
+#define		ACKERMANN_CHASSIS
+//#define		MECANUM_CHASSIS
+
 /******************************Private structure******************************************/
 
 typedef struct
@@ -21,7 +31,7 @@ typedef struct
 	chassis_info_t* chassis_info;
 	motor_t* chassis_motor;
 	servo_t* chassis_servo;
-	
+	uint8_t chassis_dirFlag;
 }chassis_t;
 
 /******************************Private function******************************************/

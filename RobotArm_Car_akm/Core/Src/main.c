@@ -97,8 +97,16 @@ int main(void)
   MX_TIM4_Init();
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
-	Remote_Init();								
+	Remote_Init();
+#ifdef ACKERMANN_CHASSIS	
 	Module_Init();
+	#elif defined MECANUM_CHASSIS
+	/*ADD YOUR CODE HERE*/
+
+	/*END YOUR CODE HERE*/
+#endif
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -110,7 +118,13 @@ int main(void)
     /* USER CODE BEGIN 3 */
 		Remote_Communi_Start(Remote);
 		
+		#ifdef ACKERMANN_CHASSIS
 		Module_Start(Module, Remote);
+		#elif defined MECANUM_CHASSIS
+		/*ADD YOUR CODE HERE*/
+
+		/*END YOUR CODE HERE*/
+		#endif
   }
   /* USER CODE END 3 */
 }

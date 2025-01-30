@@ -33,7 +33,7 @@ void Remote_Init(void)
   */
 void Remote_Communi_Start(remote_t* remote)		
 {
-	HAL_GPIO_WritePin(GPIOA, SPI_CS_Pin, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_RESET);
 	
 	HAL_SPI_TransmitReceive(&hspi1, &remote_cmd[0], &Rx_Data[0], 1, 0xFFFF);
 	Delay_us(18);
@@ -52,7 +52,7 @@ void Remote_Communi_Start(remote_t* remote)
 		Delay_us(18);
 	}
 	
-	HAL_GPIO_WritePin(GPIOA, SPI_CS_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_SET);
 	Delay_us(5000);
 }
 

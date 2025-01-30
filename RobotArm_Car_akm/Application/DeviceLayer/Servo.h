@@ -16,15 +16,15 @@
 
 #define FRONT_SERVO_MIDDLE_CCR							(uint16_t)150
 #define FRONT_SERVO_MAX_LIMIT_CCR						(uint16_t)200
-#define FRONT_SERVO_MIN_LIMIT_CCR						(uint16_t)95
+#define FRONT_SERVO_MIN_LIMIT_CCR						(uint16_t)115
 
 #define LEFT_SERVO_MIDDLE_CCR								(uint16_t)150
 #define LEFT_SERVO_RISE_LIMIT_CCR						(uint16_t)215
 #define LEFT_SERVO_DESCEND_LIMIT_CCR				(uint16_t)120
 
 #define RIGHT_SERVO_MIDDLE_CCR							(uint16_t)170
-#define RIGHT_SERVO_EXTEND_LIMIT_CCR				(uint16_t)230
-#define RIGHT_SERVO_DRAWBACK_LIMIT_CCR			(uint16_t)140
+#define RIGHT_SERVO_EXTEND_LIMIT_CCR				(uint16_t)250
+#define RIGHT_SERVO_DRAWBACK_LIMIT_CCR			(uint16_t)165
 
 /******************************Private enum******************************************/
 

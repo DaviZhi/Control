@@ -1,6 +1,7 @@
 #include "chassis.h"
 #include "stdlib.h"
 
+#ifdef	ACKERMANN_CHASSIS 
 /**@brief Initialize motor and servo on the chassis to middle.
 	*@param Chassis structure ptr
   *@retval None
@@ -100,7 +101,9 @@ void Chassis_RedMode_Ctrl_Set(chassis_t* chassis, remote_t* remote)
 	{
 		if(remote->remote_info->key_info->DOWN != 0)
 		{
-			Motor_Rev_Forward_Set(chassis->chassis_motor, chassis->chassis_info->key_rev_CCR);
+			Motor_Rev_forwardToRightOrLeft_Set(chassis->chassis_motor, chassis->chassis_dirFlag, 
+			chassis->chassis_info->key_rev_CCR);
+//			Motor_Rev_Forward_Set(chassis->chassis_motor, chassis->chassis_info->key_rev_CCR);
 		}
 	}
 	else if(remote->remote_info->key_info->UP == 1)		//否则停止正转
@@ -111,7 +114,9 @@ void Chassis_RedMode_Ctrl_Set(chassis_t* chassis, remote_t* remote)
 	{
 		if(remote->remote_info->key_info->UP != 0)
 		{
-			Motor_Rev_Backward_Set(chassis->chassis_motor, chassis->chassis_info->key_rev_CCR);
+			Motor_Rev_backwardToRightOrLeft_Set(chassis->chassis_motor, chassis->chassis_dirFlag,
+			chassis->chassis_info->key_rev_CCR);
+//			Motor_Rev_Backward_Set(chassis->chassis_motor, chassis->chassis_info->key_rev_CCR);
 		}
 	}
 	else if(remote->remote_info->key_info->DOWN == 1)		//否则停止反转
@@ -126,8 +131,10 @@ void Chassis_RedMode_Ctrl_Set(chassis_t* chassis, remote_t* remote)
 		Motor_Rev_Zero_Set(chassis->chassis_motor);
 	}
 	
-			if(remote->remote_info->key_info->R1 == 0)
+			if(remote->remote_info->key_info->R1 == 0)		//右转
 			{
+				chassis->chassis_dirFlag = RIGHT_FLAG;
+				
 				chassis->chassis_servo[BOTTOM].degr_CCR += CHASSIS_SERVO_UNIT;
 				if(chassis->chassis_servo[BOTTOM].degr_CCR > BOTTOM_SERVO_RIGHT_LIMIT_CCR)
 				{
@@ -139,8 +146,10 @@ void Chassis_RedMode_Ctrl_Set(chassis_t* chassis, remote_t* remote)
 				}
 				Servo_BOTTOM_Degr_Set(chassis->chassis_servo[BOTTOM].degr_CCR);
 			}
-			if(remote->remote_info->key_info->L1 == 0)
+			if(remote->remote_info->key_info->L1 == 0)		//左转
 			{
+				chassis->chassis_dirFlag = LEFT_FLAG;
+				
 				chassis->chassis_servo[BOTTOM].degr_CCR -= CHASSIS_SERVO_UNIT;
 				if(chassis->chassis_servo[BOTTOM].degr_CCR > BOTTOM_SERVO_RIGHT_LIMIT_CCR)
 				{
@@ -155,6 +164,8 @@ void Chassis_RedMode_Ctrl_Set(chassis_t* chassis, remote_t* remote)
 			
 			if(remote->remote_info->key_info->R1 != 0 && remote->remote_info->key_info->L1 != 0)
 			{
+				chassis->chassis_dirFlag = STRAIGHT_FLAG;		//直行
+				
 				chassis->chassis_servo[BOTTOM].degr_CCR = BOTTOM_SERVO_MIDDLE_CCR;
 				Servo_BOTTOM_Degr_Set(chassis->chassis_servo[BOTTOM].degr_CCR);
 			}
@@ -179,3 +190,10 @@ void Chassis_RedMode_Ctrl_Start(chassis_t* chassis, remote_t* remote)
 		Motor_Rev_Forward_Start();
 	}
 }
+
+#elif defined MECANUM_CHASSIS
+/*ADD YOUR CODE HERE*/
+
+/*END YOUR CODE HERE*/
+
+#endif

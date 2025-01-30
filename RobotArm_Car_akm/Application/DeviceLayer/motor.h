@@ -36,8 +36,8 @@ typedef struct
 /******************************Private function******************************************/
 
 void Motor_Init(motor_t* motor);
-void Motor_Rev_Forward_Set(motor_t* motor, uint16_t rev_ccr);
-void Motor_Rev_Backward_Set(motor_t* motor, uint16_t rev_ccr);
+void Motor_Rev_forwardToRightOrLeft_Set(motor_t* motor, uint8_t dir_flag, uint16_t rev_ccr);
+void Motor_Rev_backwardToRightOrLeft_Set(motor_t* motor, uint8_t dir_flag, uint16_t rev_ccr);
 void Motor_Rev_Zero_Set(motor_t* motor);
 void Motor_Rev_Forward_Start(void);
 void Motor_Rev_Backward_Start(void);

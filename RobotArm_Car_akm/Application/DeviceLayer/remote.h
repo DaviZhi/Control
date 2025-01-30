@@ -24,7 +24,7 @@
 #define			SEND_START_FLAG					(uint8_t)0x5A
 #define			COMMUNI_CYCLE_LENGTH		(uint8_t)0x09
 
-#define			KEY_REV_CCR							(uint16_t)480		//rev_ccr when key is pressed
+#define			KEY_REV_CCR							(uint16_t)480		//set rev_ccr when key is pressed
 
 /******************************Private Structure******************************************/
 
@@ -74,7 +74,7 @@ typedef struct
 	
 }remote_t;
 
-extern remote_t* Remote;		//The remote structure
+extern remote_t* Remote;		//the remote structure
 
 /******************************Private function******************************************/
 

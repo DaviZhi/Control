@@ -3,6 +3,7 @@
 
 module_t* Module;		//The whole module structure ptr
 
+#ifdef 	ACKERMANN_CHASSIS
 /**@brief Initialize module, including arm and chassis.
 	*@note	This function will be called in main function.
 	*@param None
@@ -59,7 +60,7 @@ void Module_Start(module_t* module, remote_t* remote)
 		}
 		
 		case GREEN_MODE:
-		{		//...
+		{		//...debug
 			break;
 		}
 		
@@ -67,3 +68,10 @@ void Module_Start(module_t* module, remote_t* remote)
 			break;
 	}
 }
+
+#elif defined MECANUM_CHASSIS
+/*ADD YOUR CODE HERE*/
+
+/*END YOUR CODE HERE*/
+
+#endif

@@ -170,5 +170,5 @@ void Arm_RedMode_Ctrl_Start(arm_t* arm, remote_t* remote)
 	//先解算，再启动
 	Servo_LEFT_Start(LEFT);
 	Servo_RIGHT_Start(RIGHT);
-//	Servo_FRONT_Start(FRONT);		//测试，要换一个新的舵机
+	Servo_FRONT_Start(FRONT);		
 }

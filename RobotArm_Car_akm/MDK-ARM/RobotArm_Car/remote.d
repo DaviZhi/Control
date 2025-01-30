@@ -7,14 +7,14 @@ robotarm_car\remote.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
 robotarm_car\remote.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
 robotarm_car\remote.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h
 robotarm_car\remote.o: ../Drivers/CMSIS/Include/core_cm3.h
-robotarm_car\remote.o: D:\Soft\Keil5 MDK\ARM\ARMCC\Bin\..\include\stdint.h
+robotarm_car\remote.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 robotarm_car\remote.o: ../Drivers/CMSIS/Include/cmsis_version.h
 robotarm_car\remote.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 robotarm_car\remote.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
 robotarm_car\remote.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
 robotarm_car\remote.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 robotarm_car\remote.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-robotarm_car\remote.o: D:\Soft\Keil5 MDK\ARM\ARMCC\Bin\..\include\stddef.h
+robotarm_car\remote.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 robotarm_car\remote.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
 robotarm_car\remote.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
 robotarm_car\remote.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
@@ -31,4 +31,4 @@ robotarm_car\remote.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.
 robotarm_car\remote.o: ../Core/Inc/spi.h
 robotarm_car\remote.o: ../Core/Inc/main.h
 robotarm_car\remote.o: ../Core/Inc/tim.h
-robotarm_car\remote.o: D:\Soft\Keil5 MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+robotarm_car\remote.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
